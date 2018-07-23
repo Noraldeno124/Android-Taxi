@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_title"
+        fontPath="fonts/OpenSans-Semibold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textview_gray"
+        android:textSize="26sp"
+        tools:text="title"/>
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:layout_weight="2"
+        android:contentDescription="@string/content_desc_trip_image"
+        android:scaleType="centerInside"
+        tools:src="@drawable/gear"/>
+
+    <com.flysfo.shorttrips.trip.CountdownView
+        android:id="@+id/countdown"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="85"/>
+  </LinearLayout>
+
+  <com.flysfo.shorttrips.trip.NotificationView
+      android:id="@+id/notification_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:visibility="gone"/>
+
+  <include
+      android:id="@+id/reachability"
+      layout="@layout/view_reachability"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"/>
+
+</FrameLayout>

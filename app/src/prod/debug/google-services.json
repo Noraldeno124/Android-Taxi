@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "236960452286",
+    "firebase_url": "https://taxiq-50a28.firebaseio.com",
+    "project_id": "taxiq-50a28",
+    "storage_bucket": "taxiq-50a28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236960452286:android:62ae53e0d231e0a7",
+        "android_client_info": {
+          "package_name": "com.flysfo.shorttrips.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236960452286-7sul8ts4f28ao18436be89u2rbkhcnop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flysfo.shorttrips.debug",
+            "certificate_hash": "39934470CA348DB25891C1733A6884E9EDF3D4F4"
+          }
+        },
+        {
+          "client_id": "236960452286-iuui1ql41jssjovqg7umsafedsvoq61h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hVcl2N3p6Kfaqn5mVm3uihb7Vy5mPAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236960452286-iuui1ql41jssjovqg7umsafedsvoq61h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "236960452286-f4rdd4vj0ge0k8tpdinro859m5lqrobq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flysfo.short-trips"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236960452286:android:687f36c019c4c320",
+        "android_client_info": {
+          "package_name": "com.flysfo.shorttrips.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236960452286-gtphndamkma99rsdm59d4ptlbplcgk7p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flysfo.shorttrips.debug",
+            "certificate_hash": "39934470CA348DB25891C1733A6884E9EDF3D4F4"
+          }
+        },
+        {
+          "client_id": "236960452286-iuui1ql41jssjovqg7umsafedsvoq61h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1hVcl2N3p6Kfaqn5mVm3uihb7Vy5mPAY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236960452286-iuui1ql41jssjovqg7umsafedsvoq61h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "236960452286-f4rdd4vj0ge0k8tpdinro859m5lqrobq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flysfo.short-trips"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

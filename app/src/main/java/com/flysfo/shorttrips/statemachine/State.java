@@ -1,0 +1,26 @@
+package com.flysfo.shorttrips.statemachine;
+
+import com.flysfo.shorttrips.statemachine.easyflow.StateEnum;
+
+/**
+ * Created by mattluedke on 2/2/16.
+ */
+public enum State implements StateEnum {
+  ASSOCIATING_DRIVER_AND_VEHICLE_AT_ENTRY,
+  ASSOCIATING_DRIVER_AND_VEHICLE_AT_HOLDING_LOT_EXIT,
+  ASSOCIATING_DRIVER_AND_VEHICLE_AT_RE_ENTRY,
+  GPS_IS_OFF,
+  IN_PROGRESS,
+  NOT_READY,
+  READY,
+  STARTING_TRIP,
+  VALIDATING_TRIP,
+  WAITING_FOR_ENTRY_AVI,
+  WAITING_FOR_ENTRY_CID,
+  WAITING_FOR_EXIT_AVI,
+  WAITING_FOR_PAYMENT_CID,
+  WAITING_FOR_RE_ENTRY_AVI,
+  WAITING_FOR_RE_ENTRY_CID,
+  WAITING_FOR_TAXI_LOOP_AVI,
+  WAITING_IN_HOLDING_LOT
+}

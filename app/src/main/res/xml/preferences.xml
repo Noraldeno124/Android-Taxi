@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="@string/audio_setting_title"
+      android:title="@string/audio_setting_title"/>
+
+  <CheckBoxPreference
+      android:defaultValue="true"
+      android:key="@string/automatic_restart"
+      android:title="@string/automatic_restart"/>
+
+  <Preference
+      android:key="@string/feedback"
+      android:title="@string/feedback"
+  />
+
+  <PreferenceCategory
+      android:key="@string/notifications_title"
+      android:title="@string/notifications_title"
+  >
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/cone_notification"
+        android:title="@string/cone_notification"
+    />
+
+    <!--<CheckBoxPreference-->
+        <!--android:defaultValue="true"-->
+        <!--android:id="@+id/debug_notification"-->
+        <!--android:key="@string/debug_notification"-->
+        <!--android:title="@string/debug_notification"-->
+    <!--/>-->
+
+    <!--<CheckBoxPreference-->
+        <!--android:defaultValue="true"-->
+        <!--android:id="@+id/localdev_notification"-->
+        <!--android:key="@string/localdev_notification"-->
+        <!--android:title="@string/localdev_notification"-->
+    <!--/>-->
+  </PreferenceCategory>
+
+  <PreferenceCategory
+      android:key="@string/logged_in"
+      tools:title="signed in as bloke"
+  >
+
+    <Preference
+        android:key="@string/logout"
+        android:title="@string/logout"
+    />
+
+  </PreferenceCategory>
+</PreferenceScreen>

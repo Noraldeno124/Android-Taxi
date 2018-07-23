@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/flight_list_fragment"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:background="@color/flight_status_white"
+              android:orientation="horizontal">
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+  />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/flight_status_white"
+                android:gravity="center"
+                android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/airline_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+  </LinearLayout>
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+  />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@color/flight_status_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:background="@color/flight_status_white"
+                  android:gravity="bottom"
+                  android:orientation="horizontal">
+      <TextView
+          android:id="@+id/airline_text_view"
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/flight_status_text_blue"
+          android:textSize="11dp"
+          tools:text="SOUTHWEST AIRLINES"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:background="@color/flight_status_white"
+                  android:gravity="top"
+                  android:orientation="horizontal">
+      <TextView
+          android:id="@+id/flight_number_text_view"
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/flight_status_text_black"
+          android:textSize="11dp"
+          tools:text="#WN2081"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+  />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"
+                android:background="@color/flight_status_white"
+                android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:background="@color/flight_status_white"
+                  android:gravity="bottom"
+                  android:orientation="horizontal">
+      <TextView
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/flight_status_scheduled"
+          android:textColor="@color/flight_status_text_blue"
+          android:textSize="14dp"
+          tools:text="Scheduled: "/>
+      <TextView
+          android:id="@+id/scheduled_time_text_view"
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="3dp"
+          android:textColor="@color/flight_status_text_black"
+          android:textSize="14dp"
+          tools:text="2:55pm"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:background="@color/flight_status_white"
+                  android:gravity="top"
+                  android:orientation="horizontal">
+      <TextView
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/flight_status_estimated"
+          android:textColor="@color/flight_status_text_blue"
+          android:textSize="14dp"
+          tools:text="Estimated: "/>
+      <TextView
+          android:id="@+id/estimated_time_text_view"
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="4dp"
+          android:textColor="@color/flight_status_text_black"
+          android:textSize="14dp"
+          tools:text="2:55pm"/>
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+  />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/flight_status_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/status_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:visibility="visible"
+    />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+    />
+    <TextView
+        android:id="@+id/status_text_view"
+        fontPath="fonts/OpenSans-Semibold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="10sp"
+        tools:text="ON TIME"
+        tools:textColor="@color/flight_status_ontime_text_blue"/>
+
+  </LinearLayout>
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+  />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trip_countdown_background"
+    android:orientation="vertical"
+    >
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="3"/>
+
+  <TextView
+      android:id="@+id/text_title"
+      fontPath="fonts/OpenSans-Bold.ttf"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      android:textAllCaps="true"
+      android:text="@string/short_trip_expires_in"
+      android:textColor="@color/trip_countdown_title"
+      android:textSize="18sp"/>
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="2"/>
+
+  <TextView
+      android:id="@+id/text_countdown"
+      fontPath="fonts/OpenSans-Semibold.ttf"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:gravity="center"
+      tools:text="1h 59m 59s"
+      android:textColor="@color/trip_countdown_countdown"
+      android:textSize="36sp"/>
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="3"/>
+
+</LinearLayout>

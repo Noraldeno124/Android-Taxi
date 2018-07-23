@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#236B87</color>
+  <color name="colorPrimaryDark">#094665</color>
+  <color name="colorAccent">#ACC5D1</color>
+
+  <!--CONE-->
+  <color name="orange_cone">#F65D09</color>
+  <color name="gray_textview_bg">#F0F5F9</color>
+
+  <!--TEXTVIEW-->
+  <color name="textview_gray">#56565A</color>
+
+  <!--DEBUG-->
+  <color name="debug_yellow">#EEEE77</color>
+  <color name="debug_cyan">#77EEEE</color>
+  <color name="debug_gray">#999999</color>
+  <color name="debug_purple">#EE77EE</color>
+  <color name="debug_blue">#7777EE</color>
+  <color name="debug_pink">#EE7799</color>
+  <color name="debug_green">#779999</color>
+
+  <!--TRIP-->
+  <color name="trip_countdown_background">#F3F6F8</color>
+  <color name="trip_countdown_countdown">#005978</color>
+  <color name="trip_countdown_title">#4888FF</color>
+
+  <!--NOTIFICATION-->
+  <color name="notification_green">#F2F8F5</color>
+  <color name="notification_red">#F8D9DD</color>
+
+  <!--AUTH-->
+  <color name="auth_alpha_white">#1A010101</color>
+
+  <!--FLIGHT STATUS-->
+  <color name="flight_status_picker_btn_text">#FFFFFF</color>
+  <color name="flight_status_picker_btn">#0084BB</color>
+  <color name="flight_status_picker_pressed_btn">#075F85</color>
+  <color name="flight_status_ontime_digit_blue">#4A90E2</color>
+  <color name="flight_status_ontime_text_blue">#4275A4</color>
+  <color name="flight_status_delayed_digit_red">#D0021B</color>
+  <color name="flight_status_delayed_text_red">#C32026</color>
+  <color name="flight_status_text_blue">#4275A4</color>
+  <color name="flight_status_hour_picker_background">#F4F6F3</color>
+  <color name="flight_status_white">#FFFFFF</color>
+  <color name="flight_status_dark_bg">#26D8D8D8</color>
+  <color name="flight_status_separator">#E5E5E5</color>
+  <color name="flight_status_text_black">#000000</color>
+
+  <!--FLIGHT STATUS-->
+  <color name="lot_text_blue">#166783</color>
+  <color name="lot_bg_blue">#F2F6F8</color>
+  <color name="lot_green">#159B20</color>
+  <color name="lot_yellow">#E9B52E</color>
+  <color name="lot_red">#F22829</color>
+
+</resources>

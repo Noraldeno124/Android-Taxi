@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/flight_status_white"
+      android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/flight_status_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/flight_status_picker_btn"
+        android:gravity="center"
+        android:spinnerMode="dialog"/>
+
+    <com.flysfo.shorttrips.flight.TerminalView
+        android:id="@+id/terminal_keys_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:background="@color/flight_status_dark_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/flight_status_separator"/>
+
+    <com.flysfo.shorttrips.flight.TerminalView
+        android:id="@+id/terminal_view_intl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/flight_status_white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/flight_status_separator"
+        />
+
+    <com.flysfo.shorttrips.flight.TerminalView
+        android:id="@+id/terminal_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/flight_status_dark_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/flight_status_separator"
+        />
+
+    <com.flysfo.shorttrips.flight.TerminalView
+        android:id="@+id/terminal_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/flight_status_white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/flight_status_separator"
+        />
+
+    <com.flysfo.shorttrips.flight.TerminalView
+        android:id="@+id/terminal_view_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/flight_status_dark_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/flight_status_separator"
+        />
+
+    <com.flysfo.shorttrips.flight.TerminalView
+        android:id="@+id/terminal_total_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/flight_status_white"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/flight_status_separator"
+        />
+
+    <com.flysfo.shorttrips.flight.HourPickerView
+        android:id="@+id/hour_picker_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        custom:default_hour="1"
+        custom:max_hour="12"
+        custom:min_hour="-2"/>
+
+
+    <com.flysfo.shorttrips.refresh.TimerView
+        android:id="@+id/timer_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        custom:update_interval="300"
+        />
+
+  </LinearLayout>
+
+  <ProgressBar
+      android:id="@+id/loading_spinner"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:indeterminateTintMode="src_atop"
+      android:indeterminateTint="@color/lot_text_blue"
+      android:layout_gravity="center"
+      android:layout_centerInParent="true"
+      android:visibility="gone"/>
+
+  <include
+      android:id="@+id/reachability"
+      layout="@layout/view_reachability"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      />
+</RelativeLayout>

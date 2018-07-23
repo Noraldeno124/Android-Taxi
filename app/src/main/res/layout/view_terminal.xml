@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+  <Space
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:padding="10dp" >
+    <TextView
+        android:id="@+id/text_terminal_name"
+        fontPath="fonts/OpenSans-Semibold.ttf"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:textColor="@color/flight_status_text_blue"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        tools:text="International"
+        />
+  </LinearLayout>
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/key_ontime"
+                android:visibility="gone">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:gravity="center"
+                  android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="10dp"
+          android:layout_gravity="center"
+          android:src="@drawable/blue_circle"
+          />
+
+      <TextView
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:gravity="top"
+          android:textColor="@color/flight_status_ontime_text_blue"
+          android:textSize="12sp"
+          android:layout_marginTop="5dp"
+          android:textAlignment="center"
+          android:text="@string/flight_status_ontime"
+          tools:text="ON TIME"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/text_on_time"
+      fontPath="fonts/OpenSans-Semibold.ttf"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:layout_weight="3"
+      android:gravity="center"
+      android:textColor="@color/flight_status_ontime_digit_blue"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      tools:text="18"
+      />
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_height="match_parent"
+                  android:layout_weight="20"
+                  android:layout_width="0dp"
+                  android:orientation="vertical"
+                  android:id="@+id/key_delayed"
+                  android:visibility="gone">
+
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="10dp"
+          android:layout_gravity="center"
+          android:src="@drawable/red_circle"
+          />
+
+      <TextView
+          fontPath="fonts/OpenSans-Semibold.ttf"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:gravity="top"
+          android:textColor="@color/flight_status_delayed_text_red"
+          android:textSize="12sp"
+          android:layout_marginTop="5dp"
+          android:textAlignment="center"
+          android:text="@string/flight_status_delayed"
+          tools:text="DELAYED"
+          />
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_delayed"
+        fontPath="fonts/OpenSans-Semibold.ttf"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:textColor="@color/flight_status_delayed_digit_red"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        tools:text="16"
+        />
+
+    <ImageView
+        android:id="@+id/img_chevron"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:contentDescription="@string/content_desc_arrow"
+        android:src="@drawable/indicator_arrow"
+        />
+
+  </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="TimerView">
+    <attr name="update_interval" format="integer" />
+  </declare-styleable>
+  <declare-styleable name="HourPickerView">
+    <attr name="default_hour" format="integer" />
+    <attr name="max_hour" format="integer" />
+    <attr name="min_hour" format="integer" />
+  </declare-styleable>
+</resources>

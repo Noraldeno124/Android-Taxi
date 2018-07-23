@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="22">
+
+      <com.flysfo.shorttrips.lot.LotView
+          android:id="@+id/lotview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+
+      <com.flysfo.shorttrips.lot.ConeView
+          android:id="@+id/coneview"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <com.flysfo.shorttrips.refresh.TimerView
+        android:id="@+id/timer_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="2"
+        custom:update_interval="60"
+    />
+
+  </LinearLayout>
+
+  <ProgressBar
+      android:id="@+id/lot_loading_spinner"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:indeterminateTint="@color/lot_text_blue"
+      android:indeterminateTintMode="src_atop"/>
+
+  <include
+      android:id="@+id/reachability"
+      layout="@layout/view_reachability"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"
+  />
+</FrameLayout>
